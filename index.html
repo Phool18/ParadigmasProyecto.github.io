@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<title>IESTPFM</title>
+	<style>
+		/* Este es para los elementos en general*/
+		.navbar-light .navbar-nav .nav-link {
+			color: rgb(0, 0, 0);
+			font-size: 1.25rem;
+		}
+		/*  Este es para el elemento activo */
+		.navbar-light .navbar-nav .nav-link.active{
+			color: rgb(118, 197, 240);
+		}
+		/* Este es para cuando el cursor pase sobre el elemento*/
+		.navbar-light .navbar-nav .nav-link:hover{
+			color: rgb(118, 197, 240);
+		}
+
+	</style>
+</head>
+<body>
+	<header class="fixed-top shadow-sm">
+	<!-- navbar -->
+		<nav class="navbar py-0 navbar-expand-md navbar-light" style="background-color: #fff;">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="img/logoFM2.jpg" class="navbar-imagen" alt="">
+				</a>
+	
+				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav text-center ml-auto">
+					<a class="nav-link" href="#inicio">Inicio</a>
+					<a class="nav-link" href="#section-carrera">Carrera</a>
+					<a class="nav-link" href="#section-interes">Interes</a>
+					<a class="nav-link" href="#section-gestion">Gestión</a>
+					<a class="nav-link" href="#section-info">Información</a>
+				  </div>
+				</div>
+			</div>
+		</nav>
+	
+	</header>
+	<!-- A PARTIR DE ESTA ACA ES EL CONTENIDO -->
+
+	<main class="secciones">
+		
+	<!-- PRIMERA SECCION: INICIO -->
+	 <section class="seccion_inicio" id="inicio">
+		
+		<div class="fondo container-fluid">
+			<div class="position-relative">
+				<img src="img/IESTPFM_Inicio.jpg" class=" w-100" alt="" style="z-index: -1;">
+				<img src="img/bienvenida.png" class="imagen-encima" style="z-index: 1;" alt="">
+				<a class="btn btn-info btn-lg texto-encima" href="https://aulavirtual.iestpfm.edu.pe/moodle30/login/index.php" role="button"  target="_blank" style="z-index: 2;">AULA VIRTUAL</a>
+			</div>
+			<div class="row p-3">
+				<div class="col-md-4 imagen px-4">
+					<img src="img/img_inicio1.jpg" class="img-fluid rounded" alt="">
+				</div>
+				<div class="col-md-8 p-3 px-md-2">
+					<div class="seccion_inicio-bienvenida p-3">
+						<p>El Instituto de Educación Superior Tecnológico Público "Florencia de Mora" les da la bienvenida a los visitantes de este sitio WEB.</p>
+						<p>Esperamos que con nuestro actuar y experiencia, los cambios propuestos que estamos emprendiendo resulten significativos para mejorar el desempeño de todo el personal de la institucion de modo tal que nos permita cada dia establecer mejores acciones como formadores y ciudadanos en el espacio educativo y social que nos corresponde desemvolvernos y contribuir asi al fortalecimiento de una sociedad mas equitativa cada dia.</p>
+						<p>A nombre de la institucion, les invitamos a visitar nuestras instalaciones.</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+		<div class="mt-5">
+			<h1 class="color-texto text-center">NOTICIAS</h1>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/noticias 1.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/noticias 2.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/noticias 3.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+			<h1 class="col-12 mt-5 color-texto text-center">¿Por que deberias estudiar con nosotros?</h1>
+			<div class="row">
+				<div class="col-12 col-md-4 imagen"><img src="img/icon 1.png" class="" height="150" alt=""></div>
+				<div class="col-12 col-md-2 imagen"><h1 class="tamaño-texto-2">1</h1></div>
+				<div class="col-md-6 pt-md-5 text-center text-md-left">Somos la unica Institucion de Educación Superior Tecnologica Pública en el distrito de Florencia de Mora.</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-4 imagen"><img src="img/icon 2.png" class="" height="150" alt=""></div>
+				<div class="col-12 col-md-2 imagen"><h1 class="tamaño-texto-2">2</h1></div>
+				<div class="col-md-6 pt-md-5 text-center text-md-left">Tenemos la finalidad de promover y apoyar el desarrollo personal,pedagógico y social de los docentes, administrativos y alumnos.</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-4 imagen"><img src="img/icon 3.png" class="" height="150" alt=""></div>
+				<div class="col-12 col-md-2 imagen"><h1 class="tamaño-texto-2">3</h1></div>
+				<div class="col-md-6 pt-md-5 text-center text-md-left">Contamos con las carreras profesionales de Contabilidad y Enfermeria Tecnica.</div>
+			</div>
+			
+			<div class="row my-5">
+				<div class="col-12 col-md-6 px-md-3">
+					<h3 class="color-texto text-center">Mision</h3>
+					<p class="text-center text-md-left">El instituto educativo Florencia de Mora cuenta con personal altamente calificado dedicado a promover el desarrollo y la formación integral de niños, niñas y adolescentes, a través de una educación de calidad basada en principios éticos y valores cristianos que les permita responder al mundo globalizado y construir una sociedad solidaria que opte por la vida y por la paz.</p>
+				</div>
+				<div class="col-12 col-md-6 px-md-3">
+					<h3 class="color-texto text-center">Vision</h3>
+					<p class="text-center text-md-left">En el año 2021 el Colegio San Roque será una institución lider a nivel nacional e internacional, caracterizado por la vivencia de valores humanos y cristianos en sus estudiantes, con altos estándares de calidad educativa a través de una formación humanista, cientifica y tecnólogica que contribuya al desarrollo del país</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</section>
+
+	<!-- SEGUNDA SECCION: CARRERA -->
+	<section id="section-carrera">
+		<div class="fondo container-fluid px-md-5 py-5">
+			<div class="text-center p-2">
+				<h2><b>CONOCE NUESTRAS CARRERAS</b></h2>
+				<p>El Instituto de Educación Superior Tecnológico Público ofrece 2 Programas de Estudios</p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-4 text-center text-md-right mr-auto">
+					<div class="row py-md-5 mr-md-0">
+						<div class="botones-carrera col-12 py-1">
+							<div class="col-12">
+								<button type="button" class="btn carrera-boton" id="btn1" style="width: 150px;">Enfermeria</button>
+							</div>
+							<div class="col-12">
+								<button type="button" class="btn carrera-boton" id="btn2" style="width: 150px;">Contabilidad</button>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="imagenes-carrera col-md-8 text-center ml-auto">
+					<img src="img/carrera-enfermeria.png" alt=""class="img-fluid d-none" id="imgDiv1" >
+					<img src="img/carrera-contabilidad.png" alt=""class="img-fluid d-none" id="imgDiv2">
+				</div>
+			</div>
+		</div>
+		
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-md-8">
+					<h2><b>Programa de Estudio:</b></h2>
+					<p>La organización y planificación de cada asignatura, área o módulo, constituyen los programas de estudio, que son la herramienta fundamental de trabajo de los docentes y obviamente la finalidad y la intencionalidad, así como la forma de operarlos se deriva tanto de la fundamentación del currículo, como de los planes</p>
+				</div>
+				<div class="col-md-4 text-center d-md-flex align-items-center">
+					<img src="img/animacion 11.png" class="img-fluid" alt="">
+				</div>
+			</div>
+			<div class="row py-5">
+				<div class="col-md-6 ">
+					<h2><b>Enfermeria</b></h2>
+					<p>Desde el boton de descargar puede obtener el pdf con la malla de esta carrera:</p>
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<img src="img/icon 4.png" alt="">
+						</div>
+						<div class="col-md-6 text-center d-md-flex align-items-center">
+							<button type="button" class="btn boton" style="width: 150px;">Descargar</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2><b>Contabilidad</b></h2>
+					<p>Desde el boton de descargar puede obtener el pdf con la malla de esta carrera:</p>
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<img src="img/icon 5.png" alt="">
+						</div>
+						<div class="col-md-6 text-center d-md-flex align-items-center">
+							<button type="button" class="btn boton" style="width: 150px;">Descargar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fondo py-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="py-1 col-12 col-lg-6">
+								<h2><b>Requisitos</b></h2>
+								<p>Partida de Nacimiento</p>
+								<p>Copia de DNI actual</p>
+								<p>Certificados de Estudios secundarios</p>
+								<p>2 fotos tamaño carnet</p>
+								<p>Inscripción de postulante</p>
+								<p>Matricula</p>
+							</div>
+							<div class="py-1 col-12 col-lg-6">
+								<h2><b>Beneficios</b></h2>
+								<p>Titulo a Nombre de la Nacion</p>
+								<p>Carnet de medio pasaje</p>
+								<p>Enseñanza personalizada</p>
+								<p>Todos los programas de estudios son computarizadas</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center d-md-flex align-items-center">
+						<img src="img/animacion 2.png" class="img-fluid" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- TERCERA SECCION: INTERES -->	
+	<section id="section-interes">
+		<br><br>
+		<h1 class="text-center color-texto pt-5"><b>DE INTERES</b></h1>
+		<br>
+		<div class="fondo container-fluid px-md-5 py-5">
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1 class="text-center"><b>SERVICIOS</b></h1>
+						<p>Somos una isntitución comprometida con el desarrollo de nuestra comunidad florenciana, ofrenciendo para ello cursos de capacitación extracurrilares para aquellos profesionales 
+							que vienen desempeñandose en el sector productivo y de servicios, asi como campañas de salud y asesoria en ciencia contables y administrativas a los microempresarios</p>
+					</div>
+					<div class="col-md-6 pt-4">
+						<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="img/noticias 1.png" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="img/noticias 2.png" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="img/noticias 3.png" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="container py-5">
+			<div class="row py-2">
+				<div class="col-md-6">
+					<h1 class="color-texto">PUBLICACIONES</h1>
+					<p>Esta sección está dedicada a la publicación de articulos, ensayos, material bibliográfico o algunos libros que el personal de la isntitución desee publicar.</p>
+					<p>Incorpora tambien algunos libros de autores reconocidos.</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<img src="img/animacion 3.png" class="img-fluid" alt="">
+				</div>
+			</div>
+			<div class="row py-2 text-center">
+				<div class="col-md-4 py-2">
+					<div class="row">
+						<div class="col-6">
+							<img src="img/libro 1.png" class="img-fluid" alt="">
+						</div>
+						<div class="col-6">
+							<div class="row"><h4><b>Despierta</b></h4></div>
+							<div class="row"><p>Anthony de Mello</p></div>
+							<div class="row">
+								<a href="">Descarga <i class="fas fa-download icono-descarga"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 py-2">
+					<div class="row">
+						<div class="col-6">
+							<img src="img/libro 2.png" class="img-fluid" alt="">
+						</div>
+						<div class="col-6">
+							<div class="row"><h4><b>El Alquimista</b></h4></div>
+							<div class="row"><p>Paulo Coelho</p></div>
+							<div class="row">
+								<a href="">Descarga <i class="fas fa-download icono-descarga"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 py-2">
+					<div class="row">
+						<div class="col-6">
+							<img src="img/libro 3.png" class="img-fluid" alt="">
+						</div>
+						<div class="col-6">
+							<div class="row"><h4><b>La Vaca</b></h4></div>
+							<div class="row"><p>Camilo Cruz</p></div>
+							<div class="row"><a href="">Descarga <i class="fas fa-download icono-descarga"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- CUARTA SECCION: GESTION -->	
+	<section id="section-gestion">
+		<br>
+		<div class="fondo px-md-5 py-5">
+			<h1 class="text-center"><b>GESTIÓN</b></h1>
+			<div class="container">
+				<table class="table text-center">
+					<thead>
+						<tr>
+							<th scope="col">Nro</th>
+							<th scope="col">Nombre del Documento</th>
+							<th scope="col">Responsables</th>
+							<th scope="col">Descargas</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>01</td>
+							<td>Plan Educativo Institucional(PEI).</td>
+							<td>Integrantes de la Comunidad Educativa</td>
+							<td>
+								<button type="button" class="btn boton btn-raised my-0"><i class="fas fa-download icono"></i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Plan Anual de Trabajo(PAT).</td>
+							<td>Integrantes de la Comunidad Educativa</td>
+							<td>
+								<button type="button" class="btn boton btn-raised my-0"><i class="fas fa-download icono"></i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Reglamento Interno(RI).</td>
+							<td>Integrantes de la Comunidad Educativa</td>
+							<td>
+								<button type="button" class="btn boton btn-raised my-0"><i class="fas fa-download icono"></i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>Manual de Organizacion y Funciones(MOF).</td>
+							<td>Integrantes de la Comunidad Educativa</td>
+							<td>
+								<button type="button" class="btn boton btn-raised my-0"><i class="fas fa-download icono"></i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Reglamento de Consejo Académico.</td>
+							<td>Integrantes de la Comunidad Educativa</td>
+							<td>
+								<button type="button" class="btn boton btn-raised my-0"><i class="fas fa-download icono"></i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>Plan de Consejeria Institucional.</td>
+							<td>Rosa Lidia García Cobeñas.</td>
+							<td>
+								<button type="button" class="btn boton btn-raised my-0"><i class="fas fa-download icono"></i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>Plan de Desarrollo Informático Institucional(PDI).</td>
+							<td>Ing Victor Jaime Polo Romero.</td>
+							<td>
+								<button type="button" class="btn boton btn-raised my-0"><i class="fas fa-download icono"></i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>08</td>
+							<td>Reglamento de Prácticas Pre Profesionales.</td>
+							<td>Integrantes de la Comunidad Educativa</td>
+							<td>
+								<button type="button" class="btn boton btn-raised my-0"><i class="fas fa-download icono"></i></button>
+							</td>
+						</tr>
+						<tr>
+							<td>09</td>
+							<td>Plan de Seguimiento de Egresados</td>
+							<td>Ana Melva Sánchez García. - Humberto Díaz Rodriguez</td>
+							<td>
+								<button type="button" class="btn boton btn-raised my-0"><i class="fas fa-download icono"></i></button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
+	</section>
+	<!-- QUINTA SECCION: INFORMACION -->	
+	<section id="section-info">
+		<br><br><br>
+		<h1 class="text-center color-texto"><b>INFORMACIÓN</b></h1>
+		<br>
+		<div class="fondo py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h2><b>Proceso de Admisión</b></h2>
+						<p>El Instituto de Educación Superior Tecnológico Público "Florencia de Mora" Ofrece 2 Programas de Estudio para el periodo 2020</p>
+						<p>Inscripciones abiertas desde 05 de enero de 2020</p>
+						<p>Exámen de Admisión: 30 de Marzo del 2020 - Hora 2:00 pm</p>
+						<p>Inicio de Clases 03 de Abril 2020</p>
+					</div>
+					<div class="col-md-4 text-center d-md-flex align-items-center">
+						<img src="img/animacion 4.png" class="img-fluid" alt="">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<h2><b>FORMULARIO UNICO DE TRAMITE</b></h2>
+						<p>Desde el boton de Tramite acceda al Formulario Unico de Tramite:</p>
+					</div>
+					<div class="col-md-6 text-center d-md-flex align-items-center">
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLScs5_RqaQAJkBn35aAef9_wfKKEzZYnxZG5SP7VxHYqQEJP3A/viewform?usp=sf_link" target="_blank"><button type="button" class="btn boton my-0"><i class="fas fa-share icono"></i> Tramite</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-12">
+					<p class="py-2"><span  style="color: gray; margin-right: 10px;" data-feather="globe"></span><a href="">http://iestpfm.com/</a></p>
+					<p class="py-2"><i class="fas fa-phone" style="color: gray; margin-right: 15px;"></i>942 884 208</p>
+					<p class="py-2"><span  style="color: gray; margin-right: 10px;" data-feather="mail"></span><a href="">mesadepartesiestpfm@gmail.com</a></p>
+					<p class="py-2"><i class="fab fa-facebook-messenger" style="color: gray; margin-right: 15px;"></i><a href="">Enviar Mensaje</a></p>
+				</div>
+				
+			</div>
+			<div class="row d-flex justify-content-center">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1823941302473!2d-79.02666428521995!3d-8.082873194180623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3df9e8df007d%3A0xa3ad6ab8c1aeaf6e!2sInstituto%20Superior%20Tecnologico%20Superior%20Florencia%20de%20mora!5e0!3m2!1ses!2spe!4v1622522218450!5m2!1ses!2spe" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+		<div class="fondo py-5">
+			<div class="container">
+				<h2><b>Nos Ponemos a tu servicio</b></h2>
+				<br>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4 py-2">
+						<h5><b>Secretaria Academica</b></h5>
+						<p>Elsi E.Vasquez Alvarez</p>
+						<p>981956901</p>
+						<p>elsivasquez@hotmail.com</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 py-2">
+						<h5><b>Area de Calidad</b></h5>
+						<p>Blanca Guzman Aranguri</p>
+						<p>924440110</p>
+						<p>blanca_lyly@hotmail.com</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 py-2">
+						<h5><b>Jefe Unidad Academica</b></h5>
+						<p>Mercedes E. Robles Leon</p>
+						<p>977385076</p>
+						<p>editarl@hotmail.com</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 py-2">
+						<h5><b>Coordinacion de Area A. de Enfermeria Tecn.</b></h5>
+						<p>Iris A. Gutierrez</p>
+						<p>948019238</p>
+						<p>iris_gr@hotmail.com</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 py-2">
+						<h5><b>Investigacion e innovac. Tecnologica</b></h5>
+						<p>Maria K.Flores Díaz</p>
+						<p>949092873</p>
+						<p>mflores_90@hotmail.com</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 py-2">
+						<h5><b>Coordinacion de Area A. de Contabilidad</b></h5>
+						<p>Miguel Gutierrez Muñoz</p>
+						<p>942884208</p>
+						<p>miguel_guiterrez_m@hotmail.com</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 py-2">
+						<h5><b>Bienestar y Empleabilidad</b></h5>
+						<p>Angelica Morin Rodríguez</p>
+						<p>925828027</p>
+						<p>angelitamorimr@gmail.com</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 py-2">
+						<h5><b>Secretaria Gneral Mesa de Partes</b></h5>
+						<p>Víctor M.Morillo Tapia</p>
+						<p>970391029</p>
+						<p>mesadepartesiestpfm@gmail.com</p>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 py-2">
+						<h5><b>Formacion Continua</b></h5>
+						<p>Elva Rodríguez Avila</p>
+						<p>948128339</p>
+						<p>glorita.laredo@gmail.com</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>	
+	</div>
+    </main>
+
+	<!-- PIE DE PÁGINA -->
+	<footer>
+			<div class="row ">
+				<div class="col-12 col-md-6 text-center">
+					<div class="row">
+						<div class="col-4 imagen text-right"><img src="img/logoFM.png" class="img-fluid" width="90" alt=""></div>
+						<div class="col-8 mt-3"><h1 class="tamaño-texto-1 text-left">IESTPFM</h1></div>
+						<div class="col-12"><h5>2021 Instituto de Educación Superior Tecnológico Público Florencia de Mora</h5></div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 text-center text-md-right mt-4">
+					<b><span data-feather="map-pin" class="pb-1"></span>UBICACIÓN:</b>
+					<p>Jose de la Torre Ugarte S/N (Plaza de Armas) Florencia de Mora. Trujillo</p>
+					<b><i class="fas fa-phone"></i> TELEFONO:</b>
+					<p>044-210426</p>
+				</div>
+	</footer>
+	
+	<script src="js/jquery-3.5.1.min.js"></script>
+ 	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+	<script src="js/feather.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
