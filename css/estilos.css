@@ -7,10 +7,37 @@ body {
 	background: #fff;
 	color: #000;
 	font-family: 'Open Sans', sans-serif;
+	margin-top: 60px;
 }
 footer {
 	padding: 20px;
-	background: rgb(119,119,119);
+	color: #fff;
+	background: rgb(25, 46, 73);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #333333;
+	font-size: 16px;
+	font-weight:bold;
+}
+.navbar-light .navbar-nav .nav-link.active{
+	color: rgb(118, 197, 240);
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: rgb(118, 197, 240);
+	transition: 0.4s;
+}
+
+.dropdown-item{
+	color: #333333;
+	font-size: 16px;
+	font-weight:bold;
+}
+.dropdown-item.active{
+	background-color: rgb(118, 197, 240);
+}
+.dropdown-item:hover{
+	background-color: rgb(118, 197, 240);
 }
 
 div.row{
@@ -20,29 +47,13 @@ div.row{
  div.container-fluid{
 	padding-right: 0px;
  }
-/* SECCIONES
 
-1. INICIO
-
-2. CARRERA
-
-3. INTERES
-
-4. GESTION
-
-5. INFORMACION 
-*/
 .navbar-imagen{
 	height: 50px;
 	max-height: 135px;
 }
-.secciones{
-	padding-top: 60px;
-}
 
-/* 1. INICIO */
-
-.seccion_inicio-bienvenida{
+.bienvenida{
 	background: rgb(238, 238, 238);
 	border-radius: 5px;
 }
@@ -112,17 +123,17 @@ div.row{
 	color: #fff;
 }
 
-/* .carrera-boton{
+.carrera-boton-info{
 	margin: 10px 0;
 	font-weight: bold;
 }
-.carrera-boton:hover{
+.carrera-boton-info:hover{
 	transition: 0.7s;
 	background: rgb(223, 100, 94);
 	border-color: rgb(233, 100, 94);
 	color: #fff;
 }
-.carrera-boton.active{
+.carrera-boton-info.active{
 	transition: 0.7s;
 	box-shadow: 0px 0px 0px 3px rgb(255, 186, 183)!important;
 	background: rgb(223, 100, 94);
@@ -130,40 +141,13 @@ div.row{
 	color: #fff;
 	
 }
-.carrera-boton:focus{
+.carrera-boton-info:focus{
 	box-shadow: 0px 0px 0px 3px rgb(255, 186, 183)!important;
 	background: rgb(223, 100, 94);
 	border-color: rgb(233, 100, 94);
 	color: #fff;
-} */
+}
 
-/* .boton{
-	margin: 10px 0;
-	font-weight: bold;
-	background: rgb(223, 100, 94);
-	border-color: rgb(233, 100, 94);
-	
-}
-.boton:hover{
-	transition: 0.7s;
-	font-weight: bold;
-	background: rgb(223, 100, 94);
-	border-color: rgb(233, 100, 94);
-	color: #fff;
-}
-.boton:focus{
-	box-shadow: 0px 0px 0px 3px rgb(255, 186, 183)!important;
-	background: rgb(223, 100, 94);
-	border-color: rgb(233, 100, 94);
-	color: #fff;
-}
-.boton:active{
-	margin: 10px 0;
-	font-weight: bold;
-	background: rgb(223, 100, 94);
-	border-color: rgb(233, 100, 94);
-	color: #fff;
-} */
 .boton{
 	margin: 10px 0;
 	font-weight: bold;
@@ -192,9 +176,12 @@ div.row{
 	color: #fff;
 }
 .icono{
-	font-size: 20;
+	font-size: 20px;
 }
-
+.icono2{
+	font-size: 75px;
+	color: rgb(141, 206, 249);
+}
 .table {
     border-bottom:0px !important;
 }
@@ -203,4 +190,66 @@ div.row{
 }
 .fixed-table-container {
     border:0px !important;
+}
+
+.bloque-carrera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-carrera{
+	filter: brightness(40%);
+	object-fit: cover;
+	display: flex;
+	width: 550px;
+}
+.bloque-carrera:hover .imagen-carrera{
+	transition: 0.4s;
+	filter: brightness(75%);
+}
+
+.texto-carrera{
+	position: absolute;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	z-index: 1;
+}
+.encabezado-contabilidad{
+	width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)),url('../img/Carrera_Contabilidad.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+.encabezado-enfermeria{
+	width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.9)),url('../img/Carrera_Enfermeria.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.titulo-blanco{
+	color:#fff;
+	font-size: 50px;
+	font-weight: bold;
+}
+@media screen and (max-width: 960px) {
+	.encabezado-contabilidad{
+		height: 200px;
+	}
+	.encabezado-enfermeria{
+		height: 200px;
+	}
 }
