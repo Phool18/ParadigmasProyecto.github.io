@@ -8,12 +8,27 @@
 	<link rel="stylesheet" href="fontawesome/css/all.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
 	<title>IESTPFM</title>
 	<link rel="icon" href="img/logoFM.png" type="image.png">
 </head>
 <body>
-	<header class="fixed-top shadow-sm">
-		<nav class="navbar py-0 navbar-expand-lg navbar-light" style="background-color: #fff;">
+	<nav class="navbar navbar-expand navbar-light nav-superior">
+		<div class="container">
+			  <div class="navbar-nav py-0 my-0 text-center mr-auto align-items-center">
+				  <div class="nav-link py-0" style="color: #fff;"><i class="fas fa-phone"></i> &nbsp; 044-210426</div>
+			  </div>
+			  <a class="nav-link nav-opcion" id="mail" href=""><i class="far fa-envelope"></i></a>
+			  <a class="nav-link nav-opcion" target="_blank" id="facebook" href="https://www.facebook.com/IESTP.FlorenciaMora/"><i class="fab fa-facebook-f"></i></a>
+			  <a class="nav-link nav-opcion" target="_blank" href="https://aulavirtual.iestpfm.edu.pe/moodle30/login/index.php">AULA VIRTUAL</a>
+		</div>
+	</nav>
+	<header class="shadow-sm" id="navbar-principal">
+		<nav class="navbar nav py-0 my-0 navbar-expand-lg navbar-light"  style="background-color: #fff;">
 			<div class="container">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -23,45 +38,83 @@
 				</a>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				  <div class="navbar-nav text-center mx-auto">
-					<a class="nav-link active" href="#">Inicio</a>
+					<a class="nav-link nav-opcion active" href="#">INICIO</a>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  Carreras
+						<a class="nav-link nav-opcion dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  PROGRAMAS DE ESTUDIO
 						</a>
 						<div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-						  <a class="dropdown-item my-1" href="carreras/contabilidad.html">Contabilidad</a>
-						  <a class="dropdown-item my-1" href="carreras/enfermeria.html">Enfermería Técnica</a>
+						  <a class="dropdown-item my-1" href="carreras/contabilidad.html">CONTABILIDAD</a>
+						  <a class="dropdown-item my-1" href="carreras/enfermeria.html">ENFERMERÍA TÉCNICA</a>
 						</div>
 					</li>
-					<a class="nav-link" href="admision.html">Admisión</a>
-					<a class="nav-link" href="interes.html">Interes</a>
-					<a class="nav-link" href="gestion.html">Gestión</a>
-					<a class="nav-link" href="informacion.html">Información</a>
+					<a class="nav-link nav-opcion" href="admision.html">ADMISIÓN</a>
+					<a class="nav-link nav-opcion" href="servicios.html">SERVICIOS</a>
+					<a class="nav-link nav-opcion" href="gestion.html">TRANSPARENCIA</a>
+					<a class="nav-link nav-opcion" href="contactanos.html">CONTACTANOS</a>
 				  </div>
-				  <a class="nav-link text-center" href="https://aulavirtual.iestpfm.edu.pe/moodle30/login/index.php" target="_blank"><img src="img/campus_virtual.png" height="41px" alt=""></a>
 				</div>
 			</div>
 		</nav>
 	</header>
 
 	<main>
-		<div class="fondo">
-			<div class="position-relative">
-				<img src="img/IESTPFM_Inicio.jpg" class=" w-100" alt="" style="z-index: -1;">
-				<img src="img/bienvenida.png" class="imagen-encima" style="z-index: 1;" alt="">
+		<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner slider-inicio">
+			  <div class="carousel-item active align-items-center text-center">
+				<img class="d-block w-100 img-fluid" src="img/Portada.jpg" alt="Primer slide">
+			  </div>
+			  <div class="carousel-item align-items-center text-center">
+				<img class="d-block w-100 img-fluid" src="img/portada_3.jpg" alt="Primer slide">
+				<div class="carousel-caption">
+					<div class="carrusel-texto">
+						<h1 class="slider-fuente">ESTUDIA EN IESTP FM</h1>
+						<h1 class="slider-fuente-2">EXAMEN DE ADMISION: fines de marzo</h3>
+						<h1 class="slider-fuente-2">INICIO DE CLASES: primer dia habil de abril</h3>
+					</div>
+					<a href="admision.html"><button type="button" class="btn boton-1">Mas Información</button></a>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img class="d-block w-100" src="img/Carrera_Contabilidad_Slider.jpg" alt="Segundo slide">
+				<div class="carousel-caption">
+					<h1 class="slider-fuente">CONTABILIDAD</h1>
+					<h1 class="slider-fuente-2">UNA DE LAS CARRERAS QUE OFRECEMOS</h1>
+					<a href="carreras/contabilidad.html"><button type="button" class="btn boton-1">Mas Información</button></a>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img class="d-block w-100" src="img/Carrera_Enfermeria_Slider.jpg" alt="Tercer slide">
+				<div class="carousel-caption">
+					<h1 class="slider-fuente">ENFERMERÍA TÉCNICA</h1>
+					<h1 class="slider-fuente-2">UNA DE LAS CARRERAS QUE OFRECEMOS</h1>
+					<a href="carreras/enfermeria.html"><button type="button" class="btn boton-1">Mas Información</button></a>
+				</div>
+			  </div>
 			</div>
+			<a class="carousel-control-prev carrusel-icono" href="#carouselIndicators" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next carrusel-icono" href="#carouselIndicators" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<div class="fondo">
 			<div class="container">
-				<div class="row py-3 align-items-center">
-					<div class="col-lg-4 imagen px-4">
-						<img src="img/img_inicio1.jpg" class="img-fluid rounded" alt="">
+				<div class="text-center titulo-fuente pt-3">BIENVENIDO AL PORTAL WEB IESTP FLORENCIA DE MORA</div>
+				<div class="row pb-4 align-items-center">
+					<div class="col-lg-4 p-3">
+						<img src="img/img_inicio1.jpg" class="img-fluid imagen" alt="">
 					</div>
 					<div class="col-lg-8">
-						<div class="bienvenida p-3">
-							<p>El Instituto de Educación Superior Tecnológico Público "Florencia de Mora" les da la bienvenida a los visitantes de este sitio WEB.</p>
+						<div class="cuadro-texto p-3">
+							<p>El Instituto de Educación Superior Tecnológico Público "Florencia de Mora" les da la cuadro-texto a los visitantes de este sitio WEB.</p>
 							<p>Esperamos que con nuestro actuar y experiencia, los cambios propuestos que estamos emprendiendo resulten significativos para mejorar el desempeño de todo el personal de la institucion de modo tal que nos permita cada dia establecer mejores acciones como formadores y ciudadanos en el espacio educativo y social que nos corresponde desemvolvernos y contribuir asi al fortalecimiento de una sociedad mas equitativa cada dia.</p>
 							<p>A nombre de la institucion, les invitamos a visitar nuestras instalaciones.</p>
-						</div>
-						
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -70,63 +123,47 @@
 		<div class="container">
 
 		<div class="mt-5">
-			<h1 class="color-texto text-center">NOTICIAS</h1>
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="img/comunicado_1.jpeg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item">
-						<img src="img/comunicado_2.jpeg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item">
-						<img src="img/comunicado_3.jpeg" class="d-block w-100" alt="...">
-					</div>
+			<div class="row text-center text-md-left">
+				<div class="col-12">
+					<h1 class="titulo-fuente-1">¿Por que deberias estudiar con nosotros?</h1>
+					<span class="titulo-barra"></span>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
 			</div>
-
-			<h1 class="col-12 mt-5 color-texto text-center">¿Por que deberias estudiar con nosotros?</h1>
 			<div class="row">
 				<div class="col-12 col-md-4 imagen"><img src="img/icon 1.png" class="" height="150" alt=""></div>
-				<div class="col-12 col-md-2 imagen"><h1 class="tamaño-texto-2">1</h1></div>
+				<div class="col-12 col-md-2 imagen"><h1 class="titulo-fuente-0">1</h1></div>
 				<div class="col-md-6 pt-md-5 text-center text-md-left">Somos la unica Institucion de Educación Superior Tecnologica Pública en el distrito de Florencia de Mora.</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-4 imagen"><img src="img/icon 2.png" class="" height="150" alt=""></div>
-				<div class="col-12 col-md-2 imagen"><h1 class="tamaño-texto-2">2</h1></div>
+				<div class="col-12 col-md-2 imagen"><h1 class="titulo-fuente-0">2</h1></div>
 				<div class="col-md-6 pt-md-5 text-center text-md-left">Tenemos la finalidad de promover y apoyar el desarrollo personal,pedagógico y social de los docentes, administrativos y alumnos.</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-4 imagen"><img src="img/icon 3.png" class="" height="150" alt=""></div>
-				<div class="col-12 col-md-2 imagen"><h1 class="tamaño-texto-2">3</h1></div>
+				<div class="col-12 col-md-2 imagen"><h1 class="titulo-fuente-0">3</h1></div>
 				<div class="col-md-6 pt-md-5 text-center text-md-left">Contamos con las carreras profesionales de Contabilidad y Enfermeria Tecnica.</div>
 			</div>
 			
-			<div class="row my-5">
-				<div class="col-12 col-md-6 px-md-3">
-					<h3 class="color-texto text-center">Mision</h3>
-					<p class="text-center text-md-left">El instituto educativo Florencia de Mora cuenta con personal altamente calificado dedicado a promover el desarrollo y la formación integral de niños, niñas y adolescentes, a través de una educación de calidad basada en principios éticos y valores cristianos que les permita responder al mundo globalizado y construir una sociedad solidaria que opte por la vida y por la paz.</p>
+			<div class="row my-5 text-center text-md-left">
+				<div class="col-12 col-md-6">
+					<div class="cuadro-texto">
+						<h3 class="titulo-fuente-1">Mision</h3>
+						<span class="titulo-barra"></span>
+						<p class="text-center text-md-left">El instituto educativo Florencia de Mora cuenta con personal altamente calificado dedicado a promover el desarrollo y la formación integral de niños, niñas y adolescentes, a través de una educación de calidad basada en principios éticos y valores cristianos que les permita responder al mundo globalizado y construir una sociedad solidaria que opte por la vida y por la paz.</p>
+					</div>
 				</div>
-				<div class="col-12 col-md-6 px-md-3">
-					<h3 class="color-texto text-center">Vision</h3>
-					<p class="text-center text-md-left">En el año 2021 el Colegio San Roque será una institución lider a nivel nacional e internacional, caracterizado por la vivencia de valores humanos y cristianos en sus estudiantes, con altos estándares de calidad educativa a través de una formación humanista, cientifica y tecnólogica que contribuya al desarrollo del país</p>
+				<div class="col-12 col-md-6">
+					<div class="cuadro-texto">
+						<h3 class="titulo-fuente-1">Vision</h3>
+						<span class="titulo-barra"></span>
+						<p class="text-center text-md-left">En el año 2021 El instituto educativo Florencia de Mora será una institución lider a nivel nacional e internacional, caracterizado por la vivencia de valores humanos y cristianos en sus estudiantes, con altos estándares de calidad educativa a través de una formación humanista, cientifica y tecnólogica que contribuya al desarrollo del país</p>
+					</div>
 				</div>
 			</div>
-			<div class="text-center p-2">
-				<h1 class="color-texto"><b>CONOCE NUESTRAS CARRERAS</b></h1>
+			<div class="text-center text-md-left p-2">
+				<h1 class="titulo-fuente-1">CONOCE NUESTRAS CARRERAS</h1>
+				<span class="titulo-barra"></span>
 				<p>El Instituto de Educación Superior Tecnológico Público ofrece 2 Programas de Estudios</p>
 			</div>
 			<div class="row justify-content-center">
@@ -147,31 +184,62 @@
 					</a>
 				</div>
 			</div>
-			<div class="row my-5">
-				<div class="col-12 align-items-center text-center">
-					<h1 class="color-texto"><b>MESA DE PARTES VIRTUAL IESTP FM</b></h1>
-					<p>Desde el boton acceda al Formulario Unico de Trámite para que usted pueda presentar sus solicitudes:</p>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLScs5_RqaQAJkBn35aAef9_wfKKEzZYnxZG5SP7VxHYqQEJP3A/viewform?usp=sf_link" target="_blank"><button type="button" class="btn boton my-0"><i class="fas fa-share icono"></i> Trámite</button></a>
+			<br>
+			<div class="row text-center text-md-left">
+				<div class="col-12">
+					<h1 class="titulo-fuente-1">NOTICIAS</h1>
+					<span class="titulo-barra"></span>
 				</div>
 			</div>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/comunicado_1.jpeg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/comunicado_2.jpeg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img/comunicado_3.jpeg" class="d-block w-100" alt="...">
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
 		</div>
 	</div>
     </main>
 
 	<footer>
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12 col-md-6 text-center">
-					<img src="img/logoFM.png" class="img-fluid" width="90" alt="">
-					<p> © Instituto de Educación Superior Tecnológico Público Florencia de Mora 2021</p>
+			<div class="row">
+				<div class="col-12 col-md-4 py-2">
+					<h5><b>SERVICIOS</b></h5>
+					<p><a href="https://docs.google.com/forms/d/e/1FAIpQLScs5_RqaQAJkBn35aAef9_wfKKEzZYnxZG5SP7VxHYqQEJP3A/viewform?usp=sf_link">Mesa de partes</a></p>
+					<p><a href="https://www.alphaeditorialcloud.com/auth/login">Aula Virtual</a></p>
+					<p><a href="https://www.alphaeditorialcloud.com/auth/login">Biblioteca Virtual</a></p>
+					<p><a href="">Bolsa de Trabajo</a></p>
 				</div>
-	
-				<div class="col-12 col-md-6 text-center text-md-right mt-4">
-					<b><span data-feather="map-pin" class="pb-1"></span>UBICACIÓN:</b>
-					<p>Jose de la Torre Ugarte S/N (Plaza de Armas) Florencia de Mora. Trujillo</p>
-					<b><i class="fas fa-phone"></i> TELEFONO:</b>
-					<p>044-210426</p>
+				<div class="col-12 col-md-4 py-2">
+					<h5><b>SIGUENOS EN</b></h5>
+					<a href="https://www.facebook.com/IESTP.FlorenciaMora/" id="facebook" target="_blank"><i class="fab fa-facebook-square icono1"></i></a>
+				</div>
+				<div class="col-12 col-md-4 py-2">
+					<h5><b>CONTACTO</b></h5>
+					<p><i class="fas fa-map-marker-alt"></i> &nbsp; Jose de la Torre Ugarte S/N (Plaza de Armas) Florencia de Mora. Trujillo</p>
+					<p><i class="fas fa-phone"></i> &nbsp; 044-210426</p>
+					<p><i class="fas fa-phone"></i> &nbsp; 942 884 208</p>
+					<h5><b>LIBRO DE RECLAMACIONES</b></h5>
 					<a href="https://docs.google.com/forms/d/e/1FAIpQLSflXzdCFgyLuo7Wthmp8lNawe51LhGWYGm0mCbBSWr0yNa6mA/viewform" target="_blank"><img src="img/reclamaciones.png" class="img-fluid" width="90" alt=""></a>
+				</div>
+				<div class="col-12 pt-3 text-center">
+					<img src="img/logoFM.png" class="img-fluid" width="90" alt="">
+					<p>© 2021 INSTITUTO DE EDUCACIÓN SUPERIOR TECNOLÓGICO PÚBLICO FLORENCIA DE MORA</p>
 				</div>
 			</div>
 		</div>	
@@ -181,7 +249,7 @@
  	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
-	<script src="js/main.js"></script>
+	<script src="js/navbar-scroll.js"></script>
 
 	<script src="js/feather.min.js"></script>
     <script src="js/dashboard.js"></script>

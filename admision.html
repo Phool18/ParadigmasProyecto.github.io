@@ -12,8 +12,18 @@
 	<link rel="icon" href="img/logoFM.png" type="image.png">
 </head>
 <body>
-	<header class="fixed-top shadow-sm">
-		<nav class="navbar py-0 navbar-expand-lg navbar-light" style="background-color: #fff;">
+	<nav class="navbar navbar-expand navbar-light nav-superior">
+		<div class="container">
+			  <div class="navbar-nav py-0 my-0 text-center mr-auto align-items-center">
+				  <div class="nav-link py-0" style="color: #fff;"><i class="fas fa-phone"></i> &nbsp; 044-210426</div>
+			  </div>
+			  <a class="nav-link nav-opcion" id="mail" href=""><i class="far fa-envelope"></i></a>
+			  <a class="nav-link nav-opcion" target="_blank" id="facebook" href="https://www.facebook.com/IESTP.FlorenciaMora/"><i class="fab fa-facebook-f"></i></a>
+			  <a class="nav-link nav-opcion" target="_blank" href="https://aulavirtual.iestpfm.edu.pe/moodle30/login/index.php">AULA VIRTUAL</a>
+		</div>
+	</nav>
+	<header class="shadow-sm" id="navbar-principal">
+		<nav class="navbar nav py-0 my-0 navbar-expand-lg navbar-light"  style="background-color: #fff;">
 			<div class="container">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -23,22 +33,21 @@
 				</a>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				  <div class="navbar-nav text-center mx-auto">
-					<a class="nav-link" href="index.html">Inicio</a>
+					<a class="nav-link nav-opcion" href="index.html">INICIO</a>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  Carreras
+						<a class="nav-link nav-opcion dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  PROGRAMAS DE ESTUDIO
 						</a>
 						<div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-						  <a class="dropdown-item my-1" href="carreras/contabilidad.html">Contabilidad</a>
-						  <a class="dropdown-item my-1" href="carreras/enfermeria.html">Enfermería Técnica</a>
+						  <a class="dropdown-item my-1" href="carreras/contabilidad.html">CONTABILIDAD</a>
+						  <a class="dropdown-item my-1" href="carreras/enfermeria.html">ENFERMERÍA TÉCNICA</a>
 						</div>
 					</li>
-					<a class="nav-link active" href="#">Admisión</a>
-					<a class="nav-link" href="interes.html">Interes</a>
-					<a class="nav-link" href="gestion.html">Gestión</a>
-					<a class="nav-link" href="informacion.html">Información</a>
+					<a class="nav-link nav-opcion active" href="admision.html">ADMISIÓN</a>
+					<a class="nav-link nav-opcion" href="servicios.html">SERVICIOS</a>
+					<a class="nav-link nav-opcion" href="gestion.html">TRANSPARENCIA</a>
+					<a class="nav-link nav-opcion" href="contactanos.html">CONTACTANOS</a>
 				  </div>
-				  <a class="nav-link text-center" href="https://aulavirtual.iestpfm.edu.pe/moodle30/login/index.php" target="_blank"><img src="img/campus_virtual.png" height="41px" alt=""></a>
 				</div>
 			</div>
 		</nav>
@@ -46,15 +55,12 @@
 
 	<main>
 		
-		<div class="fondo py-5">
+		<div class="fondo pt-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">
-						<h1><b>Proceso de Admisión</b></h1>
-						<p>El Instituto de Educación Superior Tecnológico Público "Florencia de Mora" Ofrece 2 Programas de Estudio para el periodo 2020</p>
-						<p>Inscripciones abiertas desde 05 de enero de 2020</p>
-						<p>Exámen de Admisión: 30 de Marzo del 2020 - Hora 2:00 pm</p>
-						<p>Inicio de Clases 03 de Abril 2020</p>
+						<h1 class="titulo-fuente">PROCESO DE ADMISIÓN</h1>
+						<p>El Instituto de Educación Superior Tecnológico Público "Florencia de Mora" Ofrece 2 Programas de Estudio para el periodo 2021</p>
 					</div>
 					<div class="col-md-4 text-center d-md-flex align-items-center">
 						<img src="img/animacion 4.png" class="img-fluid" alt="">
@@ -63,11 +69,14 @@
 				<br>
 			</div>
 		</div>
-		<div class="fondo py-5">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-6">
-						<h2><b>1. REQUISITOS</b></h2>
+		<div class="container justify-content-center">
+			<div class="linea-tiempo">
+				<div class="momento cuadro-texto">
+					<h3>REQUISITOS</h3>
+					<div class="descripcion">
+						<div class="text-center">
+							<span class="titulo-barra"></span>
+						</div>
 						<ol>
 							<li>Certificado de estudio 1° al 5° de secundaria.</li>
 							<li>Copia de DNI.</li>
@@ -76,45 +85,77 @@
 							<li>Voucher de pago por derecho de inscripción.</li>
 						</ol>
 					</div>
-					<div class="col-md-6 py-3">
-						<h2><b>2. COSTO DE INSCRIPCIÓN</b></h2>
-						<p>50 soles de pago en el banco de la nación o agente multired. Luego del pago de INSCRIPCIÓN , realizar la inscripción virtual y subir todos sus documentos escaneados o tomado foto en el siguiente link (no olvidar escribir tus datos correctamente )</p>
-						<a href="https://forms.gle/pHzQ4KVJniDxiH8z9" target="_blank">https://forms.gle/pHzQ4KVJniDxiH8z9</a>
+				</div>
+				<div class="momento cuadro-texto">
+					<h3>COSTO DE INSCRIPCIÓN</h3>
+					<div class="descripcion">
+						<div class="text-center">
+							<span class="titulo-barra"></span>
+						</div>
+						<p>Son 50 soles de pago en el banco de la nación o agente multired. Luego del pago de INSCRIPCIÓN , realizar la inscripción virtual y subir todos sus documentos escaneados o tomado foto en el siguiente link (no olvidar escribir tus datos correctamente )</p>
+						<div class="text-center">
+							<a href="https://forms.gle/pHzQ4KVJniDxiH8z9"><button type="button" class="btn boton-1">Inscripción</button></a>
+						</div>
 					</div>
-					<div class="col-md-6 py-3">
-						<h2><b>3. REVISA TU CORREO</b></h2>
-						<p>Te llegará a tu correo el PROSPECTO DE ADMISIÓN 2021 para que estés preparado para tu examen.</p>
+				</div>
+				<div class="momento cuadro-texto">
+					<h3>REVISA TU CORREO</h3>
+					<div class="descripcion">
+						<div class="text-center">
+							<span class="titulo-barra"></span>
+						</div>
+						<p>Te llegará a tu correo el PROSPECTO DE ADMISIÓN 2021 para que estés preparado para tu examen.</p>						
 					</div>
-					<div class="col-md-6 py-3">
-						<h2><b>4. REVISA TU CORREO</b></h2>
-						<p>Te llegará a tu correo el PROSPECTO DE ADMISIÓN 2021 para que estés preparado para tu examen.</p>
+				</div>
+				<div class="momento cuadro-texto">
+					<h3>EXAMEN DE ADMISIÓN</h3>
+					<div class="descripcion">
+						<div class="text-center">
+							<span class="titulo-barra"></span>
+						</div>
+						<p>Fines de marzo.</p>						
 					</div>
 				</div>
-	
-			</div>
-		</div>
-		<div class="container py-5">
-			<div class="row justify-content-center">
-				<div class="col-md-6 py-3">
-					<h2 class="color-texto">EXAMEN DE ADMISIÓN:</h2>
-					<p>fines de marzo.</p>
+				<div class="momento cuadro-texto">
+					<h3>COSTO DE MATRICULA</h3>
+					<div class="descripcion">
+						<div class="text-center">
+							<span class="titulo-barra"></span>
+						</div>
+						<p>Son 120 SOLES(solo se hará el pago de derecho de matrícula después de haber aprobado el examen de admisión).</p>						
+					</div>
 				</div>
-				<div class="col-md-6 py-3">
-					<h2 class="color-texto">COSTO DE MATRÍCULA:</h2>
-					<p>120 SOLES(solo se hará el pago de derecho de matrícula después de haber aprobado el examen de admisión).</p>
+				<div class="momento cuadro-texto">
+					<h3>INICIO DE CLASES</h3>
+					<div class="descripcion">
+						<div class="text-center">
+							<span class="titulo-barra"></span>
+						</div>
+						<p>Primer día hábil de abril.</p>						
+					</div>
 				</div>
-				<div class="col-md-6 py-3">
-					<h2 class="color-texto">INICIO DE CLASES:</h2>
-					<p>primer día hábil de abril.</p>
+				<div class="momento cuadro-texto">
+					<h3>CUENTAS PARA PAGO DE INSCRIPCIÓN Y MATRICULA</h3>
+					<div class="descripcion">
+						<div class="text-center">
+							<span class="titulo-barra"></span>
+						</div>
+						<h4>Agente multired</h4>
+						<p>Cuenta corriente: 00741173883</p>
+						<p>CCI: 01874100074117388399</p>						
+					</div>
 				</div>
-				<div class="col-md-6 py-3">
-					<h2 class="color-texto">CUENTAS PARA PAGO DE INSCRIPCIÓN Y MATRICULA:</h2>
-					<p>Agente multired: cuenta corriente ---> 00741173883</P>
-					<P>CCI: ---->01874100074117388399</p>
-				</div>
-				<div class="col-md-6 py-3">
-					<h2 class="color-texto">YA ERES DE LOS NUESTROS:</h2>
+			  </div>
+			<div class="justify-content-center py-5">
+				<div class="col-12 cuadro-texto">
+					<div class="text-center">
+						<h1 class="titulo-fuente-1">YA ERES DE LOS NUESTROS:</h1>
+						<span class="titulo-barra"></span>
+					</div>
 					<p>¡Felicidades! después de haber hecho todo lo mencionado anteriormente ya eres un estudiante de nuestra institución y se te agregara a los grupos de WhatsApp por cada curso. </p>
+					<p>Llama para arención personalizada:</p>
+					<p>ENFERMERÍA: 949 092 873</p>
+					<p>CONTABILIDAD: 942 884 208</p>
 				</div>
 			</div>
 		</div>
@@ -122,18 +163,29 @@
 
 	<footer>
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12 col-md-6 text-center">
-					<img src="img/logoFM.png" class="img-fluid" width="90" alt="">
-					<p> © Instituto de Educación Superior Tecnológico Público Florencia de Mora 2021</p>
+			<div class="row">
+				<div class="col-12 col-md-4 py-2">
+					<h5><b>SERVICIOS</b></h5>
+					<p><a href="https://docs.google.com/forms/d/e/1FAIpQLScs5_RqaQAJkBn35aAef9_wfKKEzZYnxZG5SP7VxHYqQEJP3A/viewform?usp=sf_link">Mesa de partes</a></p>
+					<p><a href="https://www.alphaeditorialcloud.com/auth/login">Aula Virtual</a></p>
+					<p><a href="https://www.alphaeditorialcloud.com/auth/login">Biblioteca Virtual</a></p>
+					<p><a href="">Bolsa de Trabajo</a></p>
 				</div>
-	
-				<div class="col-12 col-md-6 text-center text-md-right mt-4">
-					<b><span data-feather="map-pin" class="pb-1"></span>UBICACIÓN:</b>
-					<p>Jose de la Torre Ugarte S/N (Plaza de Armas) Florencia de Mora. Trujillo</p>
-					<b><i class="fas fa-phone"></i> TELEFONO:</b>
-					<p>044-210426</p>
+				<div class="col-12 col-md-4 py-2">
+					<h5><b>SIGUENOS EN</b></h5>
+					<a href="https://www.facebook.com/IESTP.FlorenciaMora/" id="facebook" target="_blank"><i class="fab fa-facebook-square icono1"></i></a>
+				</div>
+				<div class="col-12 col-md-4 py-2">
+					<h5><b>CONTACTO</b></h5>
+					<p><i class="fas fa-map-marker-alt"></i> &nbsp; Jose de la Torre Ugarte S/N (Plaza de Armas) Florencia de Mora. Trujillo</p>
+					<p><i class="fas fa-phone"></i> &nbsp; 044-210426</p>
+					<p><i class="fas fa-phone"></i> &nbsp; 942 884 208</p>
+					<h5><b>LIBRO DE RECLAMACIONES</b></h5>
 					<a href="https://docs.google.com/forms/d/e/1FAIpQLSflXzdCFgyLuo7Wthmp8lNawe51LhGWYGm0mCbBSWr0yNa6mA/viewform" target="_blank"><img src="img/reclamaciones.png" class="img-fluid" width="90" alt=""></a>
+				</div>
+				<div class="col-12 pt-3 text-center">
+					<img src="img/logoFM.png" class="img-fluid" width="90" alt="">
+					<p>© 2021 INSTITUTO DE EDUCACIÓN SUPERIOR TECNOLÓGICO PÚBLICO FLORENCIA DE MORA</p>
 				</div>
 			</div>
 		</div>	
@@ -143,7 +195,7 @@
  	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
-	<script src="js/main.js"></script>
+	<script src="js/navbar-scroll.js"></script>
 
 	<script src="js/feather.min.js"></script>
     <script src="js/dashboard.js"></script>

@@ -12,9 +12,18 @@
 	<link rel="icon" href="../img/logoFM.png" type="image.png">
 </head>
 <body>
-	<header class="fixed-top shadow-sm">
-
-		<nav class="navbar py-0 navbar-expand-lg navbar-light" style="background-color: #fff;">
+	<nav class="navbar navbar-expand navbar-light nav-superior">
+		<div class="container">
+			  <div class="navbar-nav py-0 my-0 text-center mr-auto align-items-center">
+				  <div class="nav-link py-0" style="color: #fff;"><i class="fas fa-phone"></i> &nbsp; 044-210426</div>
+			  </div>
+			  <a class="nav-link nav-opcion" id="mail" href=""><i class="far fa-envelope"></i></a>
+			  <a class="nav-link nav-opcion" target="_blank" id="facebook" href="https://www.facebook.com/IESTP.FlorenciaMora/"><i class="fab fa-facebook-f"></i></a>
+			  <a class="nav-link nav-opcion" target="_blank" href="https://aulavirtual.iestpfm.edu.pe/moodle30/login/index.php">AULA VIRTUAL</a>
+		</div>
+	</nav>
+	<header class="shadow-sm" id="navbar-principal">
+		<nav class="navbar nav py-0 my-0 navbar-expand-lg navbar-light"  style="background-color: #fff;">
 			<div class="container">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -24,33 +33,31 @@
 				</a>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				  <div class="navbar-nav text-center mx-auto">
-					<a class="nav-link" href="../index.html">Inicio</a>
+					<a class="nav-link nav-opcion" href="../index.html">INICIO</a>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  Carreras
+						<a class="nav-link nav-opcion active dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  PROGRAMAS DE ESTUDIO
 						</a>
 						<div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
-						  <a class="dropdown-item my-1" href="contabilidad.html">Contabilidad</a>
-						  <a class="dropdown-item active my-1" href="#">Enfermeria Tecnica</a>
+						  <a class="dropdown-item my-1" href="contabilidad.html">CONTABILIDAD</a>
+						  <a class="dropdown-item my-1" href="#">ENFERMERÍA TÉCNICA</a>
 						</div>
 					</li>
-					<a class="nav-link" href="../admision.html">Admisión</a>
-					<a class="nav-link" href="../interes.html">Interes</a>
-					<a class="nav-link" href="../gestion.html">Gestión</a>
-					<a class="nav-link" href="../informacion.html">Información</a>
+					<a class="nav-link nav-opcion" href="../admision.html">ADMISIÓN</a>
+					<a class="nav-link nav-opcion" href="../servicios.html">SERVICIOS</a>
+					<a class="nav-link nav-opcion" href="../gestion.html">TRANSPARENCIA</a>
+					<a class="nav-link nav-opcion" href="../contactanos.html">CONTACTANOS</a>
 				  </div>
-				  <a class="nav-link text-center" href="https://aulavirtual.iestpfm.edu.pe/moodle30/login/index.php" target="_blank"><img src="../img/campus_virtual.png" height="41px" alt=""></a>
 				</div>
 			</div>
 		</nav>
-	
 	</header>
 
 	<main>
 		<div class="fondo px-md-5">
 			<div class="container">
 				<div class="text-center p-2 encabezado-enfermeria">
-					<h1 class="titulo-blanco">ENFERMERÍA TÉCNICA</h1>
+					<h1 class="titulo-fuente-2">ENFERMERÍA TÉCNICA</h1>
 				</div>
 			</div>
 		</div>
@@ -110,25 +117,36 @@
                 </div>
                 <h2 class="py-3"><b>Requisitos e Inscripción</b></h2>
                 <p>En el siguiente enlace encontrara toda la informacion necesaria.</p>
-                <a href="../admision.html"><button type="button" class="btn boton my-0"><i class="fas fa-share icono"></i> Admisión</button></a>
+                <a href="../admision.html"><button type="button" class="btn boton-1 my-0">Admisión</button></a>
 			</div>
 		</div>
     </main>
 
 	<footer>
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12 col-md-6 text-center">
-					<img src="../img/logoFM.png" class="img-fluid" width="90" alt="">
-					<p> © Instituto de Educación Superior Tecnológico Público Florencia de Mora 2021</p>
+			<div class="row">
+				<div class="col-12 col-md-4 py-2">
+					<h5><b>SERVICIOS</b></h5>
+					<p><a href="https://docs.google.com/forms/d/e/1FAIpQLScs5_RqaQAJkBn35aAef9_wfKKEzZYnxZG5SP7VxHYqQEJP3A/viewform?usp=sf_link">Mesa de partes</a></p>
+					<p><a href="https://www.alphaeditorialcloud.com/auth/login">Aula Virtual</a></p>
+					<p><a href="https://www.alphaeditorialcloud.com/auth/login">Biblioteca Virtual</a></p>
+					<p><a href="">Bolsa de Trabajo</a></p>
 				</div>
-	
-				<div class="col-12 col-md-6 text-center text-md-right mt-4">
-					<b><span data-feather="map-pin" class="pb-1"></span>UBICACIÓN:</b>
-					<p>Jose de la Torre Ugarte S/N (Plaza de Armas) Florencia de Mora. Trujillo</p>
-					<b><i class="fas fa-phone"></i> TELEFONO:</b>
-					<p>044-210426</p>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSflXzdCFgyLuo7Wthmp8lNawe51LhGWYGm0mCbBSWr0yNa6mA/viewform" target="_blank"><img src="img/reclamaciones.png" class="img-fluid" width="90" alt=""></a>
+				<div class="col-12 col-md-4 py-2">
+					<h5><b>SIGUENOS EN</b></h5>
+					<a href="https://www.facebook.com/IESTP.FlorenciaMora/" id="facebook" target="_blank"><i class="fab fa-facebook-square icono1"></i></a>
+				</div>
+				<div class="col-12 col-md-4 py-2">
+					<h5><b>CONTACTO</b></h5>
+					<p><i class="fas fa-map-marker-alt"></i> &nbsp; Jose de la Torre Ugarte S/N (Plaza de Armas) Florencia de Mora. Trujillo</p>
+					<p><i class="fas fa-phone"></i> &nbsp; 044-210426</p>
+					<p><i class="fas fa-phone"></i> &nbsp; 942 884 208</p>
+					<h5><b>LIBRO DE RECLAMACIONES</b></h5>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSflXzdCFgyLuo7Wthmp8lNawe51LhGWYGm0mCbBSWr0yNa6mA/viewform" target="_blank"><img src="../img/reclamaciones.png" class="img-fluid" width="90" alt=""></a>
+				</div>
+				<div class="col-12 pt-3 text-center">
+					<img src="../img/logoFM.png" class="img-fluid" width="90" alt="">
+					<p>© 2021 INSTITUTO DE EDUCACIÓN SUPERIOR TECNOLÓGICO PÚBLICO FLORENCIA DE MORA</p>
 				</div>
 			</div>
 		</div>	
@@ -138,7 +156,7 @@
  	<script src="../js/popper.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 
-	<script src="../js/main.js"></script>
+	<script src="../js/navbar-scroll.js"></script>
 
 	<script src="../js/feather.min.js"></script>
     <script src="../js/dashboard.js"></script>
